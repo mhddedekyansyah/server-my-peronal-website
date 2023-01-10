@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{DashboardController, HeroCon, HeroController};
+use App\Http\Controllers\{DashboardController, AboutController, HeroController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.dashboard');
 // });
 
-Route::prefix('dashboard')->controller(DashboardController::class)->group(function(){
-    Route::get('','index')->name('dashboard');
-    Route::get('hero', 'hero')->name('dashboard-hero');
-    Route::get('about', 'about')->name('dashboard-about');
+Route::prefix('dashboard')->group(function(){
+    Route::get('',[DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('hero', HeroController::class);
+    Route::resource('about', AboutController::class);
 });

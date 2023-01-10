@@ -11,14 +11,5 @@ class DashboardController extends Controller
         return \view('pages.dashboard');
     }
 
-    public function hero()
-    {
-        return \view('pages.hero');
-    }
-
-    public function about()
-    {
-        return \view('pages.about');
-    }
     
 }

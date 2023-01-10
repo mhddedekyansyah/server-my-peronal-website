@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Hero</h1>
+            <h1>About</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -24,8 +24,6 @@
                         <textarea class="form-control" name="history" id="hero" cols="30" rows="10"></textarea>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Hero Photo</label>
@@ -33,7 +31,7 @@
                     </div>
                 </div>
             </div>
-           
+        
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
        </div>
