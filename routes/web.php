@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{DashboardController, AboutController, HeroController};
+use App\Http\Controllers\{DashboardController, AboutController, HeroController, ShowcaseController, SkillController, SosmedController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +22,7 @@ Route::prefix('dashboard')->group(function(){
     Route::get('',[DashboardController::class, 'index'])->name('dashboard');
     Route::resource('hero', HeroController::class);
     Route::resource('about', AboutController::class);
+    Route::resource('skills', SkillController::class);
+    Route::resource('sosmed', SosmedController::class);
+    Route::resource('showcase', ShowcaseController::class);
 });

@@ -38,23 +38,23 @@
           </li> 
           <li class="nav-header">Showcase</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+            <a href="{{ route('showcase.index') }}" class="nav-link">
+               <i class="nav-icon fas fa-solid fa-lightbulb"></i>
                 <p>Showcase</p>
             </a>
           </li> 
           <li class="nav-header">Skills & Tools</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+            <a href="{{ route('skills.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-solid fa-bolt"></i>
                 <p>Skills & Tools</p>
             </a>
           </li> 
-          <li class="nav-header">Skills & Tools</li>
+          <li class="nav-header">Sosial Media</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>Skills & Tools</p>
+            <a href="{{ route('sosmed.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-solid fa-hashtag"></i>
+                <p>Sosial Media</p>
             </a>
           </li> 
         </ul>
